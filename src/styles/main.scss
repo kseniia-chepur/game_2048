@@ -1,7 +1,209 @@
-@import "utils";
-@import "fonts";
-@import "typography";
-
 body {
-  background: $c-gray;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  background: url("../images/bg.jpg") center;
+  background-size: cover;
+}
+
+.field-cell {
+  background: #d6cdc4;
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+  color: #d6cdc4;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+
+  &--2 {
+    background: #eee4da;
+    color: #776e65;
+  }
+
+  &--4 {
+    background: #ede0c8;
+    color: #776e65;
+  }
+
+  &--8 {
+    background: #f2b179;
+    color: #f9f6f2;
+  }
+
+  &--16 {
+    background: #f59563;
+    color: #f9f6f2;
+  }
+
+  &--32 {
+    background: #f67c5f;
+    color: #f9f6f2;
+  }
+
+  &--64 {
+    background: #f65e3b;
+    color: #f9f6f2;
+  }
+
+  &--128 {
+    background: #edcf72;
+    color: #f9f6f2;
+  }
+
+  &--256 {
+    background: #edcc61;
+    color: #f9f6f2;
+  }
+
+  &--512 {
+    background: #edc850;
+    color: #f9f6f2;
+  }
+
+  &--1024 {
+    background: #edc53f;
+    color: #f9f6f2;
+  }
+
+  &--2048 {
+    background: #edc22e;
+    color: #f9f6f2;
+  }
+}
+
+.game-field {
+  background: #baa18a;
+  border-spacing: 10px;
+  border-radius: 5px;
+  border: 10px solid #baa18a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 330px;
+  height: 330px;
+}
+
+.game-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+h1 {
+  background: #edc22e;
+  color: #f9f6f2;
+  width: 75px;
+  height: 75px;
+  font-size: 24px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgb(207, 207, 85);
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+  color: #585047;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0 8px 0 0;
+}
+
+.controls {
+  display: flex;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #f9f6f2;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  width: 75px;
+  height: 75px;
+  outline: none;
+  transition: 0.25s ease all;
+}
+
+.start {
+  font-family: inherit;
+  background: #1b9b22;
+  font-size: 20px;
+
+  &:hover {
+    background: #108216;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.restart {
+  font-family: inherit;
+  background: rgb(236, 126, 126);
+
+  &:hover {
+    background: #cb4646;
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.message {
+  box-sizing: border-box;
+  width: 100%;
+  background: #d6cdc4;
+  color: #585047;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+}
+
+.message-win {
+  background: #edc22e;
+  color: #f9f6f2;
+}
+
+.message-container {
+  width: 100%;
+  height: 150px;
 }
