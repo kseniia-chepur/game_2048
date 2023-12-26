@@ -8,4 +8,4 @@
 - Game score shows the current game points
 
 
-[DEMO](kseniia-chepur.github.io/game_2048/)
+[DEMO](https://kseniia-chepur.github.io/game_2048/)
